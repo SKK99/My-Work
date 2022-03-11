@@ -1,0 +1,58 @@
+ptr.c: (in function findReplace)
+ptr.c:29:2: Return value (type int) ignored: getchar()
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalint to inhibit warning)
+ptr.c:30:8: Null storage old passed as non-null param: fgets (old, ...)
+  A possibly null pointer is passed as a parameter corresponding to a formal
+  parameter with no /*@null@*/ annotation.  If NULL may be used for this
+  parameter, add a /*@null@*/ annotation to the function parameter declaration.
+  (Use -nullpass to inhibit warning)
+   ptr.c:26:14: Storage old becomes null
+ptr.c:30:2: Return value (type char *) ignored: fgets(old, 80, s...
+  Result returned by function call is not used. If this is intended, can cast
+  result to (void) to eliminate message. (Use -retvalother to inhibit warning)
+ptr.c:32:2: Return value (type int) ignored: getchar()
+ptr.c:33:8: Null storage new passed as non-null param: fgets (new, ...)
+   ptr.c:27:14: Storage new becomes null
+ptr.c:33:2: Return value (type char *) ignored: fgets(new, 80, s...
+ptr.c:36:16: Variable newWlen initialized to type size_t, expects int:
+                strlen(new)
+  To allow arbitrary integral types to match any integral type, use
+  +matchanyintegral.
+ptr.c:37:16: Variable oldWlen initialized to type size_t, expects int:
+                strlen(old)
+ptr.c:39:11: Test expression for for not boolean, type char: str[i]
+  Test expression type is not boolean. (Use -predboolothers to inhibit warning)
+ptr.c:47:26: Function malloc expects arg 1 to be size_t gets int:
+                i + cnt * (newWlen - oldWlen) + 1
+ptr.c:49:8: Test expression for while not boolean, type char: *str
+ptr.c:52:12: Index of possibly null pointer result: result
+  A possibly null pointer is dereferenced.  Value is either the result of a
+  function which may return null (in which case, code should check it is not
+  null), or a global, parameter or structure field declared with the null
+  qualifier. (Use -nullderef to inhibit warning)
+   ptr.c:47:11: Storage result may become null
+ptr.c:57:4: Index of possibly null pointer result: result
+   ptr.c:47:11: Storage result may become null
+ptr.c:60:2: Index of possibly null pointer result: result
+   ptr.c:47:11: Storage result may become null
+ptr.c: (in function extractWords)
+ptr.c:80:10: Possibly null storage heap[] passed as non-null param:
+                strcpy (heap[i], ...)
+   ptr.c:79:13: Storage heap[] may become null
+ptr.c:84:9: Returned storage heap not completely defined (*heap is undefined):
+               heap
+  Storage derivable from a parameter, return value or global is not defined.
+  Use /*@out@*/ to denote passed or returned storage which need not be defined.
+  (Use -compdef to inhibit warning)
+   ptr.c:71:2: Storage *heap allocated
+ptr.c: (in function freeMemory)
+ptr.c:95:7: Implicitly temp storage str passed as only param: free (str)
+  Temp storage (associated with a formal parameter) is transferred to a
+  non-temporary reference. The storage may be released or new aliases created.
+  (Use -temptrans to inhibit warning)
+ptr.h:2:5: Function exported but not used outside ptr: countWords
+  A declaration is exported, but not used outside this module. Declaration can
+  use static qualifier. (Use -exportlocal to inhibit warning)
+   ptr.c:16:1: Definition of countWords
+

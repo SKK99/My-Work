@@ -1,0 +1,18 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS= -Wall -g$/;"	m
+SIZE	main.c	5;"	d	file:
+array	array.c	/^void array() {$/;"	f
+bubbleSort	array.c	/^void bubbleSort(float a[], int n) {$/;"	f
+deletee	array.c	/^int deletee(float a[], int n, float val) {$/;"	f
+display	array.c	/^void display(float a[], int n) {$/;"	f
+insert	array.c	/^void insert(float a[], int n, int pos, float val) {$/;"	f
+main	main.c	/^int main(int argc, char *argv[]) {$/;"	f
+search	array.c	/^int search(float a[], int n,float key) {$/;"	f
+string	array.c	/^void string() {$/;"	f
+swap	array.c	/^void swap(float *a, float *b) {$/;"	f
