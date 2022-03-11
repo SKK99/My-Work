@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall$/;"	m
+LIMIT	ptr2.c	4;"	d	file:
+main	main.c	/^int main(int argc, char *argv[]) {$/;"	f
+main	sample.c	/^int main(int argc, char *argv[]) {$/;"	f
+pointerToPointer	ptr.c	/^void pointerToPointer(int var) $/;"	f
+printArray	ptr2.c	/^void printArray(int n) {$/;"	f
+printDynamicArray	ptr2.c	/^void printDynamicArray(int n) {$/;"	f
+printDynamicPattern	ptr2.c	/^void printDynamicPattern(int n) {$/;"	f
+printPattern	ptr2.c	/^void printPattern(int n) {$/;"	f
+size	ptr.c	/^const int size=3;$/;"	v
+size1	ptr.c	/^const int size1=3;$/;"	v
+useArrayPointer	ptr.c	/^void useArrayPointer(int arr[]) {$/;"	f
+useCharPointer	ptr.c	/^void useCharPointer(char *arr[]) {$/;"	f
+usePointer	ptr.c	/^void usePointer(int a) {$/;"	f

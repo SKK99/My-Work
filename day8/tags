@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC=gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS= -Wall -g$/;"	m
+LIMIT	ptr2.c	9;"	d	file:
+N	array.c	5;"	d	file:
+N	array.h	2;"	d
+N	main.c	10;"	d	file:
+SIZE	array.c	6;"	d	file:
+SIZE	array.h	3;"	d
+SIZE	main.c	9;"	d	file:
+ZERO	array.c	7;"	d	file:
+ZERO	main.c	11;"	d	file:
+add	array.c	/^void add(float a[][N], float b[][N], int n) {$/;"	f
+countVowelConsonant	array.c	/^void countVowelConsonant(char a[]) {$/;"	f
+employee	array.c	/^void employee(char emp[][SIZE], int n) {$/;"	f
+insert	array.c	/^void insert(float a[], int n) {$/;"	f
+main	main.c	/^int main(int argc, char *argv[]) {$/;"	f
+pointerToPointer	ptr.c	/^void pointerToPointer(int var) $/;"	f
+printArray	ptr2.c	/^void printArray(int n) {$/;"	f
+printDynamicArray	ptr2.c	/^void printDynamicArray(int n) {$/;"	f
+printDynamicPattern	ptr2.c	/^void printDynamicPattern(int n) {$/;"	f
+printPattern	ptr2.c	/^void printPattern(int n) {$/;"	f
+search	array.c	/^void search(float a[], int n) {$/;"	f
+size	ptr.c	/^const int size=3;$/;"	v
+size1	ptr.c	/^const int size1=3;$/;"	v
+swap	ptr2.c	/^void swap(int *a, int *b) {$/;"	f
+useArrayPointer	ptr.c	/^void useArrayPointer(int arr[]) {$/;"	f
+useCharPointer	ptr.c	/^void useCharPointer(char *arr[]) {$/;"	f
+usePointer	ptr.c	/^void usePointer(int a) {$/;"	f
